@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {
+    background-color: #f0f2f5; 
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+
+.left-content {
+    flex-basis: 50%;
+    padding-right: 32px;
+}
+
+.facebook-logo {
+    color: #1877f2; 
+    font-size: 56px;
+    margin-bottom: 0;
+  
+}
+
+.left-content h2 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #1c1e21;
+    margin-top: 5px;
+}
+
+
+.right-content {
+    flex-basis: 50%;
+    max-width: 400px;
+}
+
+.login-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 15px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    outline: none; 
+}
+
+.login-form input:focus {
+    border-color: #1877f2;
+}
+
+.login-button {
+    background-color: #1877f2;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.login-button:hover {
+    background-color: #166fe5; 
+}
+
+.forgot-password {
+    text-align: center;
+    display: block;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.create-account-button {
+    background-color: #42b72a;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    width: 75%; 
+    margin: 0 auto;
+}
+
+.create-account-button:hover {
+    background-color: #36a420;
+}
+
+.create-page-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.create-page-link a {
+    font-weight: bold;
+    color: #1c1e21;
+    text-decoration: none;
+}
+
+.create-page-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column; 
+        padding: 50px 20px;
+    }
+
+    .left-content,
+    .right-content {
+        flex-basis: 100%;
+        max-width: 100%; 
+        padding: 0;
+        text-align: center; 
+    }
+
+    .left-content {
+        margin-bottom: 20px;
+    }
+
+    .right-content {
+        max-width: 396px; 
+    }
+
+    .facebook-logo {
+        font-size: 40px;
+    }
+
+    .left-content h2 {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0 20px;
+    }
+}
